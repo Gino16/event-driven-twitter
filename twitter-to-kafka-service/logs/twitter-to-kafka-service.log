@@ -662,3 +662,11 @@ Caused by: java.time.format.DateTimeParseException: Text 'vie mar. 10 16:26:58 -
 2023-03-10 16:30:11 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Fri Mar 10 16:30:11 -0500 2023","id":"2184815297485518035","text":"massa libero dolor purus posuere Spring sed libero adipscing purus","user":{"id":"7265406706743771408"}}
 2023-03-10 16:30:11 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - ESTAS EN UN HILO
 2023-03-10 16:30:11 [pool-1-thread-1] INFO  c.m.t.l.TwitterToKafkaStatusListener - Twitter status with text massa libero dolor purus posuere Spring sed libero adipscing purus
+2023-03-10 18:38:20 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 26472 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 18:38:20 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 18:38:21 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.79 seconds (JVM running for 1.934)
+2023-03-10 18:38:21 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 18:38:21 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 18:38:21 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 18:38:21 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Fri Mar 10 18:38:21 -0500 2023","id":"7287632818942683130","text":"ipsum magna pulvinar conque sit porttitor purus Spring Lorem sit dolor consectetuer pulvinar","user":{"id":"753967931270615494"}}
+2023-03-10 18:38:21 [pool-1-thread-1] INFO  c.m.t.l.TwitterToKafkaStatusListener - Twitter status with text ipsum magna pulvinar conque sit porttitor purus Spring Lorem sit dolor consectetuer pulvinar

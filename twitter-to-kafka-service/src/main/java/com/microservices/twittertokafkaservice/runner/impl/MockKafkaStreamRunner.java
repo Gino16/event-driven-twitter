@@ -1,6 +1,6 @@
 package com.microservices.twittertokafkaservice.runner.impl;
 
-import com.microservices.twittertokafkaservice.config.TwitterToKafkaServiceConfigData;
+import com.microservices.configserver.config.TwitterToKafkaServiceConfigData;
 import com.microservices.twittertokafkaservice.exception.TwitterToKafkaServiceException;
 import com.microservices.twittertokafkaservice.listeners.TwitterToKafkaStatusListener;
 import com.microservices.twittertokafkaservice.runner.StreamRunner;
@@ -12,7 +12,6 @@ import twitter4j.TwitterException;
 import twitter4j.TwitterObjectFactory;
 import twitter4j.v1.Status;
 
-import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;

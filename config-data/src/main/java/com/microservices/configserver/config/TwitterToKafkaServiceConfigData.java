@@ -1,4 +1,4 @@
-package com.microservices.twittertokafkaservice.config;
+package com.microservices.configserver.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

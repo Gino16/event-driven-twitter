@@ -1,12 +1,13 @@
 package com.microservices.twittertokafkaservice;
 
-import com.microservices.twittertokafkaservice.config.TwitterToKafkaServiceConfigData;
+import com.microservices.configserver.config.TwitterToKafkaServiceConfigData;
 import com.microservices.twittertokafkaservice.runner.StreamRunner;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * Hello world!
@@ -14,6 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @Slf4j
 @SpringBootApplication
 @RequiredArgsConstructor
+@ComponentScan(basePackages = "com.microservices")
 public class TwitterToKafkaServiceApplication implements CommandLineRunner {
 
     private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
