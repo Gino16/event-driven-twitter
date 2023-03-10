@@ -13,4 +13,5 @@ public class TwitterToKafkaServiceConfigData {
     private List<String> twitterKeywords;
     private String helloTwitter;
     private TwitterV2 twitterV2;
+    private String enableMockTweets;
 }

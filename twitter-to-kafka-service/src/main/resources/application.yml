@@ -7,7 +7,8 @@ twitter-to-kafka-service:
     - Elasticsearch
   hello-twitter: Hello Twitter
   twitter-v2:
-    enabled: true
+    enabled: false
     base-url: https://api.twitter.com/2/tweets/search/stream?tweet.fields=create_at&expansions=author_id
     rules-base-url: https://api.twitter.com/2/tweets/search/stream/rules
     bearer-token: ${TWITTER_BEARER_TOKEN}
+  enable-mock-tweets: true

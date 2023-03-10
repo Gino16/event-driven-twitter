@@ -5,6 +5,7 @@ import com.microservices.twittertokafkaservice.listeners.TwitterToKafkaStatusLis
 import com.microservices.twittertokafkaservice.runner.StreamRunner;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
 import twitter4j.v1.FilterQuery;
@@ -13,6 +14,7 @@ import twitter4j.v1.TwitterStream;
 import javax.annotation.PreDestroy;
 
 @Slf4j
+@ConditionalOnExpression("${twitter-to-kafka-service.enable-mock-tweets} && not ${twitter-to-kafka-service.twitter-v2.enabled} ")
 @RequiredArgsConstructor
 public class TwitterKafkaStreamRunner implements StreamRunner {
 
