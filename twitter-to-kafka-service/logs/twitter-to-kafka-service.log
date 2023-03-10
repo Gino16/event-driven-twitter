@@ -1,18 +1,664 @@
-2023-03-05 15:46:55 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 11928 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
-2023-03-05 15:46:55 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2023-03-05 15:46:56 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.613 seconds (JVM running for 1.15)
-2023-03-05 15:50:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 6372 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
-2023-03-05 15:50:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2023-03-05 15:50:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.558 seconds (JVM running for 1.061)
-2023-03-05 15:50:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
-2023-03-05 15:50:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - null
-2023-03-05 15:50:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 13680 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
-2023-03-05 15:50:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2023-03-05 15:50:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.547 seconds (JVM running for 1.023)
-2023-03-05 15:50:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
-2023-03-05 15:50:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
-2023-03-05 15:51:53 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 20564 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
-2023-03-05 15:51:53 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2023-03-05 15:51:54 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.59 seconds (JVM running for 1.089)
-2023-03-05 15:51:54 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
-2023-03-05 15:51:54 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:32:15 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 26452 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:32:15 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:32:15 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.689 seconds (JVM running for 1.309)
+2023-03-10 15:32:15 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:32:15 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:32:15 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:32:15 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(Fri Mar 10 15:32:15 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'Fri Mar 10 15:32:15 PET 2023' could not be parsed at index 20
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:36:04 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 16072 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:36:04 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:36:05 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.652 seconds (JVM running for 1.18)
+2023-03-10 15:36:05 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:36:05 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:36:05 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:36:05 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(Fri Mar 10 15:36:05 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'Fri Mar 10 15:36:05 PET 2023' could not be parsed at index 20
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:37:38 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 20828 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:37:38 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:37:38 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.643 seconds (JVM running for 1.198)
+2023-03-10 15:37:38 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:37:38 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:37:38 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:37:38 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(vie mar. 10 15:37:38 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'vie mar. 10 15:37:38 PET 2023' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:38:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 13988 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:38:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:38:01 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.648 seconds (JVM running for 1.195)
+2023-03-10 15:38:01 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:38:01 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:38:01 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:38:01 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(Fri Mar 10 15:38:01 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'Fri Mar 10 15:38:01 PET 2023' could not be parsed at index 20
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:38:56 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 7824 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:38:56 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:38:57 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.639 seconds (JVM running for 1.162)
+2023-03-10 15:38:57 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:38:57 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:38:57 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:38:57 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(10/03/2023 15:38:57) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text '10/03/2023 15:38:57' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:39:25 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 4580 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:39:25 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:39:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.637 seconds (JVM running for 1.212)
+2023-03-10 15:39:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:39:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:39:26 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:39:26 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(10/03/2023 15:39:26) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text '10/03/2023 15:39:26' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:40:50 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 2544 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:40:50 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:40:50 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.631 seconds (JVM running for 1.166)
+2023-03-10 15:40:50 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:40:50 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:40:50 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:40:50 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(Fri Mar 10 15:40:50 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'Fri Mar 10 15:40:50 PET 2023' could not be parsed at index 20
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:45:30 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 9180 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:45:30 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:45:30 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.722 seconds (JVM running for 1.405)
+2023-03-10 15:45:30 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:45:30 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:45:30 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:45:30 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(vie mar. 10 15:45:30 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'vie mar. 10 15:45:30 PET 2023' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:46:06 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 23092 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:46:06 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:46:07 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.654 seconds (JVM running for 1.261)
+2023-03-10 15:46:07 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:46:07 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:46:07 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:46:07 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(Fri Mar 10 15:46:07 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:81)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'Fri Mar 10 15:46:07 PET 2023' could not be parsed at index 20
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:48:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 29392 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:48:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:48:43 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.656 seconds (JVM running for 1.212)
+2023-03-10 15:48:43 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:48:43 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:48:43 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:48:43 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(Fri Mar 10 15:48:43 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'Fri Mar 10 15:48:43 PET 2023' could not be parsed at index 20
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:51:02 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 21976 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:51:02 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:51:02 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.634 seconds (JVM running for 1.181)
+2023-03-10 15:51:02 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:51:02 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:51:02 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:51:02 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(vie mar 10 15:51:02 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'vie mar 10 15:51:02 PET 2023' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:52:35 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 28368 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:52:35 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:52:36 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.684 seconds (JVM running for 1.256)
+2023-03-10 15:52:36 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:52:36 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:52:36 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:52:36 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(vie mar 10 15:52:36 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'vie mar 10 15:52:36 PET 2023' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:53:50 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 22800 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:53:50 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:53:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.631 seconds (JVM running for 1.178)
+2023-03-10 15:53:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:53:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:53:51 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:53:51 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(vie. mar 10 15:53:51 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'vie. mar 10 15:53:51 PET 2023' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:56:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 19372 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:56:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:56:52 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.73 seconds (JVM running for 1.411)
+2023-03-10 15:56:52 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:56:52 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:56:52 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:56:52 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(10/03/2023 15:56:52) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text '10/03/2023 15:56:52' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:58:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 7304 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:58:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:58:27 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.731 seconds (JVM running for 1.351)
+2023-03-10 15:58:27 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:58:27 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:58:27 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:58:27 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(10/03/2023 15:58:27) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text '10/03/2023 15:58:27' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:59:36 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 6220 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:59:36 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:59:36 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.654 seconds (JVM running for 1.244)
+2023-03-10 15:59:36 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:59:36 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:59:36 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:59:36 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(10/03/2023 15:59:36) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text '10/03/2023 15:59:36' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 15:59:44 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 13664 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 15:59:44 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 15:59:45 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.653 seconds (JVM running for 1.228)
+2023-03-10 15:59:45 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 15:59:45 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 15:59:45 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 15:59:45 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(10/03/2023 15:59:45) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text '10/03/2023 15:59:45' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 16:05:59 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 27700 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:05:59 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:06:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.634 seconds (JVM running for 1.188)
+2023-03-10 16:06:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:06:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:06:00 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:06:00 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: 2023-03-10T16:06:00.345701600-05:00[America/Lima]
+2023-03-10 16:06:00 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(10/03/2023 16:06:00) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text '10/03/2023 16:06:00' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 16:08:22 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 4176 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:08:22 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:08:22 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.639 seconds (JVM running for 1.244)
+2023-03-10 16:08:22 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:08:22 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:08:22 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:08:22 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: 2023-03-10T16:08:22.487593-05:00[America/Lima]
+2023-03-10 16:08:22 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(10/03/2023 16:08:22) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:82)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text '10/03/2023 16:08:22' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 16:12:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 21048 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:12:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:12:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.63 seconds (JVM running for 1.243)
+2023-03-10 16:12:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:12:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:12:51 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:12:51 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: 2023-03-10T16:12:51.940336800-05:00[America/Lima]
+2023-03-10 16:16:30 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 7664 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:16:30 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:16:31 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.703 seconds (JVM running for 1.299)
+2023-03-10 16:16:31 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:16:31 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:16:31 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:16:31 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: 2023-03-10T16:16:31.220753700-05:00[America/Lima]
+2023-03-10 16:18:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 23160 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:18:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:18:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.637 seconds (JVM running for 1.195)
+2023-03-10 16:18:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:18:26 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:18:26 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:18:26 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: 2023-03-10T16:18:26.577053100-05:00[America/Lima]
+2023-03-10 16:19:11 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 8112 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:19:11 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:19:12 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.672 seconds (JVM running for 1.244)
+2023-03-10 16:19:12 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:19:12 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:19:12 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:19:12 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: 2023-03-10T16:19:12.164181800-05:00[America/Lima]
+2023-03-10 16:19:21 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 25796 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:19:21 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:19:22 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.662 seconds (JVM running for 1.264)
+2023-03-10 16:19:22 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:19:22 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:19:22 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:19:22 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: 2023-03-10T16:19:22.236394600-05:00[America/Lima]
+2023-03-10 16:19:35 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 14888 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:19:35 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:19:35 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.655 seconds (JVM running for 1.204)
+2023-03-10 16:19:35 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:19:35 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:19:35 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:19:35 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: 2023-03-10T16:19:35.567606900-05:00[America/Lima]
+2023-03-10 16:19:59 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 11476 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:19:59 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:19:59 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.642 seconds (JVM running for 1.208)
+2023-03-10 16:19:59 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:19:59 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:19:59 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:19:59 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: vie mar. 10 16:19:59 PET 2023
+2023-03-10 16:20:28 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 21720 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:20:28 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:20:29 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.639 seconds (JVM running for 1.193)
+2023-03-10 16:20:29 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:20:29 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:20:29 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:20:29 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: vie mar. 10 16:20:29 PET 2023
+2023-03-10 16:20:29 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"{0}","id":"{1}","text":"{2}","user":{"id":"{3}"}}
+2023-03-10 16:21:19 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 19608 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:21:19 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:21:19 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.637 seconds (JVM running for 1.182)
+2023-03-10 16:21:19 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:21:19 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:21:19 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:21:19 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: vie mar. 10 16:21:19 PET 2023
+2023-03-10 16:21:19 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"vie mar. 10 16:21:19 PET 2023","id":"3648677700991985203","text":"dolor massa ipsum Lorem Elasticsearch libero maecenas","user":{"id":"6395648921804390536"}}
+2023-03-10 16:21:20 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(vie mar. 10 16:21:19 PET 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:83)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'vie mar. 10 16:21:19 PET 2023' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 16:26:14 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 24804 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:26:14 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:26:15 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.613 seconds (JVM running for 1.156)
+2023-03-10 16:26:15 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:26:15 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:26:15 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:26:15 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: Fri Mar 10 16:26:15 -0500 2023
+2023-03-10 16:26:15 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"vie mar. 10 16:26:15 -0500 2023","id":"3025643330590046381","text":"libero massa massa sed lectus ipsum libero maecenas Spring Lorem mara adipscing massa maecenas massa yltricies","user":{"id":"556648296342309710"}}
+2023-03-10 16:26:15 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(vie mar. 10 16:26:15 -0500 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:83)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'vie mar. 10 16:26:15 -0500 2023' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 16:26:50 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 19432 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:26:50 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:26:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.651 seconds (JVM running for 1.153)
+2023-03-10 16:26:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:26:51 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:26:51 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:26:51 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: Fri Mar 10 16:26:51 -0500 2023
+2023-03-10 16:26:51 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"vie mar. 10 16:26:51 -0500 2023","id":"3094898842460738121","text":"posuere Lorem lectus adipscing massa posuere Microservices libero sit adipscing adipscing dolor","user":{"id":"9063750491104290659"}}
+2023-03-10 16:26:51 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(vie mar. 10 16:26:51 -0500 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:83)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'vie mar. 10 16:26:51 -0500 2023' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 16:26:57 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 5920 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:26:57 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:26:58 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.642 seconds (JVM running for 1.226)
+2023-03-10 16:26:58 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:26:58 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:26:58 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:26:58 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: Fri Mar 10 16:26:58 -0500 2023
+2023-03-10 16:26:58 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"vie mar. 10 16:26:58 -0500 2023","id":"8475406478324929531","text":"pulvinar libero purus lectus Microservices purus sit","user":{"id":"2002868284657939268"}}
+2023-03-10 16:26:58 [pool-1-thread-1] ERROR c.m.t.r.impl.MockKafkaStreamRunner - Error creating tweet: 
+twitter4j.TwitterException: Unexpected date format(vie mar. 10 16:26:58 -0500 2023) returned from twitter.com
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:123)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:109)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:93)
+	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:101)
+	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:90)
+	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:52)
+	at com.microservices.twittertokafkaservice.runner.impl.MockKafkaStreamRunner.lambda$simulateTwitterStream$0(MockKafkaStreamRunner.java:83)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.time.format.DateTimeParseException: Text 'vie mar. 10 16:26:58 -0500 2023' could not be parsed at index 0
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1880)
+	at twitter4j.ParseUtil.getDate(ParseUtil.java:121)
+	... 11 common frames omitted
+2023-03-10 16:29:41 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 3800 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-10 16:29:41 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-10 16:29:41 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.63 seconds (JVM running for 1.158)
+2023-03-10 16:29:41 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-10 16:29:41 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-10 16:29:41 [main] INFO  c.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-10 16:29:41 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: Fri Mar 10 16:29:41 -0500 2023
+2023-03-10 16:29:41 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Fri Mar 10 16:29:41 -0500 2023","id":"1976856931386851012","text":"magna consectetuer porttitor yltricies Spring libero maecenas amet","user":{"id":"4978904071631658146"}}
+2023-03-10 16:29:41 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - ESTAS EN UN HILO
+2023-03-10 16:29:41 [pool-1-thread-1] INFO  c.m.t.l.TwitterToKafkaStatusListener - Twitter status with text magna consectetuer porttitor yltricies Spring libero maecenas amet
+2023-03-10 16:29:51 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: Fri Mar 10 16:29:51 -0500 2023
+2023-03-10 16:29:51 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Fri Mar 10 16:29:51 -0500 2023","id":"2002004338594521175","text":"sit consectetuer mara Kafka Lorem ipsum","user":{"id":"6339690028222664911"}}
+2023-03-10 16:29:51 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - ESTAS EN UN HILO
+2023-03-10 16:29:51 [pool-1-thread-1] INFO  c.m.t.l.TwitterToKafkaStatusListener - Twitter status with text sit consectetuer mara Kafka Lorem ipsum
+2023-03-10 16:30:01 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: Fri Mar 10 16:30:01 -0500 2023
+2023-03-10 16:30:01 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Fri Mar 10 16:30:01 -0500 2023","id":"4987800136908914133","text":"Lorem lectus Lorem posuere sed Elasticsearch posuere magna magna","user":{"id":"8741759433106068168"}}
+2023-03-10 16:30:01 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - ESTAS EN UN HILO
+2023-03-10 16:30:01 [pool-1-thread-1] INFO  c.m.t.l.TwitterToKafkaStatusListener - Twitter status with text Lorem lectus Lorem posuere sed Elasticsearch posuere magna magna
+2023-03-10 16:30:11 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - DATE: Fri Mar 10 16:30:11 -0500 2023
+2023-03-10 16:30:11 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Fri Mar 10 16:30:11 -0500 2023","id":"2184815297485518035","text":"massa libero dolor purus posuere Spring sed libero adipscing purus","user":{"id":"7265406706743771408"}}
+2023-03-10 16:30:11 [pool-1-thread-1] INFO  c.m.t.r.impl.MockKafkaStreamRunner - ESTAS EN UN HILO
+2023-03-10 16:30:11 [pool-1-thread-1] INFO  c.m.t.l.TwitterToKafkaStatusListener - Twitter status with text massa libero dolor purus posuere Spring sed libero adipscing purus

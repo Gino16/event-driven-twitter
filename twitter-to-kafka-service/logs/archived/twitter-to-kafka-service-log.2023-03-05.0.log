@@ -1,0 +1,18 @@
+2023-03-05 15:46:55 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 11928 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-05 15:46:55 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-05 15:46:56 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.613 seconds (JVM running for 1.15)
+2023-03-05 15:50:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 6372 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-05 15:50:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-05 15:50:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.558 seconds (JVM running for 1.061)
+2023-03-05 15:50:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-05 15:50:00 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - null
+2023-03-05 15:50:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 13680 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-05 15:50:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-05 15:50:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.547 seconds (JVM running for 1.023)
+2023-03-05 15:50:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-05 15:50:42 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter
+2023-03-05 15:51:53 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.6 on GINO-LAPTOP with PID 20564 (C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices\twitter-to-kafka-service\target\classes started by ginof in C:\Users\ginof\Documents\Projects\event-driven\event-driven-microservices)
+2023-03-05 15:51:53 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-05 15:51:54 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.59 seconds (JVM running for 1.089)
+2023-03-05 15:51:54 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-05 15:51:54 [main] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Twitter

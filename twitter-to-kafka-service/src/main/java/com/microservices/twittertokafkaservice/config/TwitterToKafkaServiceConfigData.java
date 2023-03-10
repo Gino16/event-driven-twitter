@@ -13,5 +13,8 @@ public class TwitterToKafkaServiceConfigData {
     private List<String> twitterKeywords;
     private String helloTwitter;
     private TwitterV2 twitterV2;
-    private String enableMockTweets;
+    private Boolean enableMockTweets;
+    private Long mockSleepMs;
+    private Integer mockMinTweetLength;
+    private Integer mockMaxTweetLength;
 }

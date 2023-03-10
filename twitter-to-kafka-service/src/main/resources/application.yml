@@ -12,3 +12,6 @@ twitter-to-kafka-service:
     rules-base-url: https://api.twitter.com/2/tweets/search/stream/rules
     bearer-token: ${TWITTER_BEARER_TOKEN}
   enable-mock-tweets: true
+  mock-min-tweet-length: 5
+  mock-max-tweet-length: 15
+  mock-sleep-ms: 10000
