@@ -1,0 +1,277 @@
+2023-03-19 00:36:29 [main] INFO  c.g.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication v0.0.1-SNAPSHOT on a437f6a4fc54 with PID 1 (/workspace/BOOT-INF/classes started by cnb in /workspace)
+2023-03-19 00:36:29 [main] INFO  c.g.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2023-03-19 00:36:30 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2023-03-19 00:36:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-03-19 00:36:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-03-19 00:36:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679186190477
+2023-03-19 00:36:30 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8080
+2023-03-19 00:36:30 [main] INFO  c.g.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.368 seconds (JVM running for 1.748)
+2023-03-19 00:36:30 [main] INFO  c.g.m.t.TwitterToKafkaServiceApplication - Hello world
+2023-03-19 00:36:30 [main] INFO  c.g.m.k.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2023-03-19 00:36:30 [main] INFO  c.g.m.k.client.KafkaAdminClient - Topics: [(name=twitter-topic, internal=false), (name=_schemas, internal=false), (name=__confluent.support.metrics, internal=false)]
+2023-03-19 00:36:31 [main] INFO  c.g.m.t.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2023-03-19 00:36:31 [main] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-03-19 00:36:31 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:36:31 +0000 2023","id":"6872729203803026397","text":"purus purus sed sed dolor dolor Lorem Java conque Maecenas conque sed sed","user":{"id":"3101850478645445397"}}
+2023-03-19 00:36:31 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: purus purus sed sed dolor dolor Lorem Java conque Maecenas conque sed sed and sending to kafka topic twitter-topic
+2023-03-19 00:36:31 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3101850478645445397, "id": 6872729203803026397, "text": "purus purus sed sed dolor dolor Lorem Java conque Maecenas conque sed sed", "createdAt": 1679186191000}' to topic='twitter-topic' with key '6872729203803026397'
+2023-03-19 00:36:31 [pool-1-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-03-19 00:36:31 [pool-1-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://schema-registry:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-03-19 00:36:31 [pool-1-thread-1] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2023-03-19 00:36:31 [pool-1-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-03-19 00:36:31 [pool-1-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-03-19 00:36:31 [pool-1-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1679186191214
+2023-03-19 00:36:31 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: uwxg2oL6RdGMrp1yi6fwgg
+2023-03-19 00:36:41 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:36:41 +0000 2023","id":"904251846975668724","text":"Maecenas malesuada yltricies sed lectus Maecenas posuere Elasticsearch amet elit Lorem magna magna","user":{"id":"4135731058821006258"}}
+2023-03-19 00:36:41 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: Maecenas malesuada yltricies sed lectus Maecenas posuere Elasticsearch amet elit Lorem magna magna and sending to kafka topic twitter-topic
+2023-03-19 00:36:41 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 4135731058821006258, "id": 904251846975668724, "text": "Maecenas malesuada yltricies sed lectus Maecenas posuere Elasticsearch amet elit Lorem magna magna", "createdAt": 1679186201000}' to topic='twitter-topic' with key '904251846975668724'
+2023-03-19 00:36:51 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:36:51 +0000 2023","id":"2106226251089208332","text":"massa libero malesuada Java adipiscing magna","user":{"id":"514650844538879367"}}
+2023-03-19 00:36:51 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: massa libero malesuada Java adipiscing magna and sending to kafka topic twitter-topic
+2023-03-19 00:36:51 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 514650844538879367, "id": 2106226251089208332, "text": "massa libero malesuada Java adipiscing magna", "createdAt": 1679186211000}' to topic='twitter-topic' with key '2106226251089208332'
+2023-03-19 00:37:01 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:37:01 +0000 2023","id":"7630254063530429194","text":"Maecenas malesuada elit mara porttitor sit dolor Lorem Elasticsearch sed dolor sed dolor sed posuere purus","user":{"id":"3523797090371554857"}}
+2023-03-19 00:37:01 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: Maecenas malesuada elit mara porttitor sit dolor Lorem Elasticsearch sed dolor sed dolor sed posuere purus and sending to kafka topic twitter-topic
+2023-03-19 00:37:01 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3523797090371554857, "id": 7630254063530429194, "text": "Maecenas malesuada elit mara porttitor sit dolor Lorem Elasticsearch sed dolor sed dolor sed posuere purus", "createdAt": 1679186221000}' to topic='twitter-topic' with key '7630254063530429194'
+2023-03-19 00:37:11 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:37:11 +0000 2023","id":"630151872028569611","text":"conque dolor sit yltricies Elasticsearch amet massa adipiscing","user":{"id":"5036516454230158362"}}
+2023-03-19 00:37:11 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: conque dolor sit yltricies Elasticsearch amet massa adipiscing and sending to kafka topic twitter-topic
+2023-03-19 00:37:11 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 5036516454230158362, "id": 630151872028569611, "text": "conque dolor sit yltricies Elasticsearch amet massa adipiscing", "createdAt": 1679186231000}' to topic='twitter-topic' with key '630151872028569611'
+2023-03-19 00:37:21 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:37:21 +0000 2023","id":"3475615193692837658","text":"sit malesuada porttitor porttitor pulvinar conque purus Java pulvinar pulvinar adipiscing massa sed yltricies","user":{"id":"3260858724227199798"}}
+2023-03-19 00:37:21 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: sit malesuada porttitor porttitor pulvinar conque purus Java pulvinar pulvinar adipiscing massa sed yltricies and sending to kafka topic twitter-topic
+2023-03-19 00:37:21 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3260858724227199798, "id": 3475615193692837658, "text": "sit malesuada porttitor porttitor pulvinar conque purus Java pulvinar pulvinar adipiscing massa sed yltricies", "createdAt": 1679186241000}' to topic='twitter-topic' with key '3475615193692837658'
+2023-03-19 00:37:31 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:37:31 +0000 2023","id":"5122424256068009416","text":"Maecenas sed lectus Maecenas Microservices consectetuer magna conque","user":{"id":"534172885591675545"}}
+2023-03-19 00:37:31 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: Maecenas sed lectus Maecenas Microservices consectetuer magna conque and sending to kafka topic twitter-topic
+2023-03-19 00:37:31 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 534172885591675545, "id": 5122424256068009416, "text": "Maecenas sed lectus Maecenas Microservices consectetuer magna conque", "createdAt": 1679186251000}' to topic='twitter-topic' with key '5122424256068009416'
+2023-03-19 00:37:41 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:37:41 +0000 2023","id":"3987876118865265236","text":"porttitor magna ipsum lectus libero sed purus lectus Elasticsearch ipsum porttitor magna consectetuer Maecenas pulvinar massa","user":{"id":"296343295792279641"}}
+2023-03-19 00:37:41 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: porttitor magna ipsum lectus libero sed purus lectus Elasticsearch ipsum porttitor magna consectetuer Maecenas pulvinar massa and sending to kafka topic twitter-topic
+2023-03-19 00:37:41 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 296343295792279641, "id": 3987876118865265236, "text": "porttitor magna ipsum lectus libero sed purus lectus Elasticsearch ipsum porttitor magna consectetuer Maecenas pulvinar massa", "createdAt": 1679186261000}' to topic='twitter-topic' with key '3987876118865265236'
+2023-03-19 00:37:51 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:37:51 +0000 2023","id":"3208046841019211804","text":"conque consectetuer consectetuer adipiscing sed mara mara Java mara adipiscing adipiscing yltricies yltricies malesuada","user":{"id":"3171689752005920462"}}
+2023-03-19 00:37:51 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: conque consectetuer consectetuer adipiscing sed mara mara Java mara adipiscing adipiscing yltricies yltricies malesuada and sending to kafka topic twitter-topic
+2023-03-19 00:37:51 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3171689752005920462, "id": 3208046841019211804, "text": "conque consectetuer consectetuer adipiscing sed mara mara Java mara adipiscing adipiscing yltricies yltricies malesuada", "createdAt": 1679186271000}' to topic='twitter-topic' with key '3208046841019211804'
+2023-03-19 00:38:01 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:38:01 +0000 2023","id":"9201979674386411288","text":"purus sed purus purus Lorem Lorem porttitor libero Spring purus dolor ipsum sed adipiscing malesuada pulvinar","user":{"id":"8685362255165863808"}}
+2023-03-19 00:38:01 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: purus sed purus purus Lorem Lorem porttitor libero Spring purus dolor ipsum sed adipiscing malesuada pulvinar and sending to kafka topic twitter-topic
+2023-03-19 00:38:01 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 8685362255165863808, "id": 9201979674386411288, "text": "purus sed purus purus Lorem Lorem porttitor libero Spring purus dolor ipsum sed adipiscing malesuada pulvinar", "createdAt": 1679186281000}' to topic='twitter-topic' with key '9201979674386411288'
+2023-03-19 00:38:11 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:38:11 +0000 2023","id":"7197972877287847136","text":"yltricies adipiscing elit conque adipiscing sit Java porttitor consectetuer dolor yltricies yltricies","user":{"id":"5394316505720424450"}}
+2023-03-19 00:38:11 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: yltricies adipiscing elit conque adipiscing sit Java porttitor consectetuer dolor yltricies yltricies and sending to kafka topic twitter-topic
+2023-03-19 00:38:11 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 5394316505720424450, "id": 7197972877287847136, "text": "yltricies adipiscing elit conque adipiscing sit Java porttitor consectetuer dolor yltricies yltricies", "createdAt": 1679186291000}' to topic='twitter-topic' with key '7197972877287847136'
+2023-03-19 00:38:21 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:38:21 +0000 2023","id":"2037590165293425441","text":"consectetuer malesuada mara purus yltricies Kafka libero consectetuer elit lectus","user":{"id":"3593042387287884109"}}
+2023-03-19 00:38:21 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: consectetuer malesuada mara purus yltricies Kafka libero consectetuer elit lectus and sending to kafka topic twitter-topic
+2023-03-19 00:38:21 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3593042387287884109, "id": 2037590165293425441, "text": "consectetuer malesuada mara purus yltricies Kafka libero consectetuer elit lectus", "createdAt": 1679186301000}' to topic='twitter-topic' with key '2037590165293425441'
+2023-03-19 00:38:31 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:38:31 +0000 2023","id":"3156388404726942926","text":"posuere posuere sed porttitor pulvinar Kafka malesuada amet Lorem consectetuer","user":{"id":"2731581196726169720"}}
+2023-03-19 00:38:31 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: posuere posuere sed porttitor pulvinar Kafka malesuada amet Lorem consectetuer and sending to kafka topic twitter-topic
+2023-03-19 00:38:31 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 2731581196726169720, "id": 3156388404726942926, "text": "posuere posuere sed porttitor pulvinar Kafka malesuada amet Lorem consectetuer", "createdAt": 1679186311000}' to topic='twitter-topic' with key '3156388404726942926'
+2023-03-19 00:38:41 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:38:41 +0000 2023","id":"2647794980148110866","text":"adipiscing elit lectus libero malesuada yltricies elit ipsum Kafka Lorem purus conque libero adipiscing adipiscing yltricies","user":{"id":"2796276005797104591"}}
+2023-03-19 00:38:41 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: adipiscing elit lectus libero malesuada yltricies elit ipsum Kafka Lorem purus conque libero adipiscing adipiscing yltricies and sending to kafka topic twitter-topic
+2023-03-19 00:38:41 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 2796276005797104591, "id": 2647794980148110866, "text": "adipiscing elit lectus libero malesuada yltricies elit ipsum Kafka Lorem purus conque libero adipiscing adipiscing yltricies", "createdAt": 1679186321000}' to topic='twitter-topic' with key '2647794980148110866'
+2023-03-19 00:38:51 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:38:51 +0000 2023","id":"7787134640845845675","text":"pulvinar lectus posuere yltricies adipiscing yltricies elit Spring dolor pulvinar ipsum elit adipiscing","user":{"id":"706729097718513525"}}
+2023-03-19 00:38:51 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: pulvinar lectus posuere yltricies adipiscing yltricies elit Spring dolor pulvinar ipsum elit adipiscing and sending to kafka topic twitter-topic
+2023-03-19 00:38:51 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 706729097718513525, "id": 7787134640845845675, "text": "pulvinar lectus posuere yltricies adipiscing yltricies elit Spring dolor pulvinar ipsum elit adipiscing", "createdAt": 1679186331000}' to topic='twitter-topic' with key '7787134640845845675'
+2023-03-19 00:39:01 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:39:01 +0000 2023","id":"2387999591125115732","text":"libero dolor malesuada posuere sit purus Java conque pulvinar porttitor mara sed","user":{"id":"5933251358757383118"}}
+2023-03-19 00:39:01 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: libero dolor malesuada posuere sit purus Java conque pulvinar porttitor mara sed and sending to kafka topic twitter-topic
+2023-03-19 00:39:01 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 5933251358757383118, "id": 2387999591125115732, "text": "libero dolor malesuada posuere sit purus Java conque pulvinar porttitor mara sed", "createdAt": 1679186341000}' to topic='twitter-topic' with key '2387999591125115732'
+2023-03-19 00:39:11 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:39:11 +0000 2023","id":"1729849177381087950","text":"sed dolor magna conque lectus amet adipiscing Maecenas Kafka massa Maecenas posuere mara dolor sed adipiscing","user":{"id":"5354336359311532365"}}
+2023-03-19 00:39:11 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: sed dolor magna conque lectus amet adipiscing Maecenas Kafka massa Maecenas posuere mara dolor sed adipiscing and sending to kafka topic twitter-topic
+2023-03-19 00:39:11 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 5354336359311532365, "id": 1729849177381087950, "text": "sed dolor magna conque lectus amet adipiscing Maecenas Kafka massa Maecenas posuere mara dolor sed adipiscing", "createdAt": 1679186351000}' to topic='twitter-topic' with key '1729849177381087950'
+2023-03-19 00:39:21 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:39:21 +0000 2023","id":"2272007410219916768","text":"porttitor libero adipiscing libero Lorem Spring amet magna adipiscing Maecenas","user":{"id":"6523437796027462537"}}
+2023-03-19 00:39:21 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: porttitor libero adipiscing libero Lorem Spring amet magna adipiscing Maecenas and sending to kafka topic twitter-topic
+2023-03-19 00:39:21 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 6523437796027462537, "id": 2272007410219916768, "text": "porttitor libero adipiscing libero Lorem Spring amet magna adipiscing Maecenas", "createdAt": 1679186361000}' to topic='twitter-topic' with key '2272007410219916768'
+2023-03-19 00:39:31 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:39:31 +0000 2023","id":"3146124708414327873","text":"Lorem elit Maecenas libero Spring consectetuer libero conque","user":{"id":"2762045333579937612"}}
+2023-03-19 00:39:31 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: Lorem elit Maecenas libero Spring consectetuer libero conque and sending to kafka topic twitter-topic
+2023-03-19 00:39:31 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 2762045333579937612, "id": 3146124708414327873, "text": "Lorem elit Maecenas libero Spring consectetuer libero conque", "createdAt": 1679186371000}' to topic='twitter-topic' with key '3146124708414327873'
+2023-03-19 00:39:41 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:39:41 +0000 2023","id":"3113234663673466619","text":"dolor purus sed lectus Elasticsearch pulvinar adipiscing","user":{"id":"5895872161583033233"}}
+2023-03-19 00:39:41 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: dolor purus sed lectus Elasticsearch pulvinar adipiscing and sending to kafka topic twitter-topic
+2023-03-19 00:39:41 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 5895872161583033233, "id": 3113234663673466619, "text": "dolor purus sed lectus Elasticsearch pulvinar adipiscing", "createdAt": 1679186381000}' to topic='twitter-topic' with key '3113234663673466619'
+2023-03-19 00:39:51 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:39:51 +0000 2023","id":"5164050083510657217","text":"conque conque libero pulvinar consectetuer purus Lorem consectetuer Elasticsearch sit porttitor consectetuer Maecenas ipsum consectetuer amet","user":{"id":"3182097519254025004"}}
+2023-03-19 00:39:51 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: conque conque libero pulvinar consectetuer purus Lorem consectetuer Elasticsearch sit porttitor consectetuer Maecenas ipsum consectetuer amet and sending to kafka topic twitter-topic
+2023-03-19 00:39:51 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3182097519254025004, "id": 5164050083510657217, "text": "conque conque libero pulvinar consectetuer purus Lorem consectetuer Elasticsearch sit porttitor consectetuer Maecenas ipsum consectetuer amet", "createdAt": 1679186391000}' to topic='twitter-topic' with key '5164050083510657217'
+2023-03-19 00:40:01 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:40:01 +0000 2023","id":"5953857445718993176","text":"lectus posuere Maecenas posuere elit consectetuer elit conque Spring malesuada Maecenas porttitor massa ipsum yltricies","user":{"id":"727022689512410291"}}
+2023-03-19 00:40:01 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: lectus posuere Maecenas posuere elit consectetuer elit conque Spring malesuada Maecenas porttitor massa ipsum yltricies and sending to kafka topic twitter-topic
+2023-03-19 00:40:01 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 727022689512410291, "id": 5953857445718993176, "text": "lectus posuere Maecenas posuere elit consectetuer elit conque Spring malesuada Maecenas porttitor massa ipsum yltricies", "createdAt": 1679186401000}' to topic='twitter-topic' with key '5953857445718993176'
+2023-03-19 00:40:11 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:40:11 +0000 2023","id":"7792750515965164309","text":"elit massa sed lectus magna pulvinar Kafka libero malesuada conque sed","user":{"id":"3526039546941208045"}}
+2023-03-19 00:40:11 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: elit massa sed lectus magna pulvinar Kafka libero malesuada conque sed and sending to kafka topic twitter-topic
+2023-03-19 00:40:11 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3526039546941208045, "id": 7792750515965164309, "text": "elit massa sed lectus magna pulvinar Kafka libero malesuada conque sed", "createdAt": 1679186411000}' to topic='twitter-topic' with key '7792750515965164309'
+2023-03-19 00:40:21 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:40:21 +0000 2023","id":"6791061719939965415","text":"lectus mara conque adipiscing elit massa Lorem Microservices adipiscing malesuada libero amet Maecenas ipsum","user":{"id":"459946876417665230"}}
+2023-03-19 00:40:21 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: lectus mara conque adipiscing elit massa Lorem Microservices adipiscing malesuada libero amet Maecenas ipsum and sending to kafka topic twitter-topic
+2023-03-19 00:40:21 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 459946876417665230, "id": 6791061719939965415, "text": "lectus mara conque adipiscing elit massa Lorem Microservices adipiscing malesuada libero amet Maecenas ipsum", "createdAt": 1679186421000}' to topic='twitter-topic' with key '6791061719939965415'
+2023-03-19 00:40:31 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:40:31 +0000 2023","id":"1734526046833447256","text":"sed dolor sed Microservices lectus purus","user":{"id":"2459890985841807336"}}
+2023-03-19 00:40:31 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: sed dolor sed Microservices lectus purus and sending to kafka topic twitter-topic
+2023-03-19 00:40:31 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 2459890985841807336, "id": 1734526046833447256, "text": "sed dolor sed Microservices lectus purus", "createdAt": 1679186431000}' to topic='twitter-topic' with key '1734526046833447256'
+2023-03-19 00:40:41 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:40:41 +0000 2023","id":"5551035134239742406","text":"Maecenas porttitor consectetuer adipiscing Java consectetuer yltricies","user":{"id":"4492603978752875126"}}
+2023-03-19 00:40:41 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: Maecenas porttitor consectetuer adipiscing Java consectetuer yltricies and sending to kafka topic twitter-topic
+2023-03-19 00:40:41 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 4492603978752875126, "id": 5551035134239742406, "text": "Maecenas porttitor consectetuer adipiscing Java consectetuer yltricies", "createdAt": 1679186441000}' to topic='twitter-topic' with key '5551035134239742406'
+2023-03-19 00:40:51 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:40:51 +0000 2023","id":"406327421905189623","text":"sit massa ipsum pulvinar Lorem purus yltricies Elasticsearch sed magna Maecenas posuere porttitor","user":{"id":"4162017389978954041"}}
+2023-03-19 00:40:51 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: sit massa ipsum pulvinar Lorem purus yltricies Elasticsearch sed magna Maecenas posuere porttitor and sending to kafka topic twitter-topic
+2023-03-19 00:40:51 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 4162017389978954041, "id": 406327421905189623, "text": "sit massa ipsum pulvinar Lorem purus yltricies Elasticsearch sed magna Maecenas posuere porttitor", "createdAt": 1679186451000}' to topic='twitter-topic' with key '406327421905189623'
+2023-03-19 00:41:01 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:41:01 +0000 2023","id":"87260271748086602","text":"posuere posuere Lorem ipsum sit malesuada massa sit Kafka Lorem posuere dolor yltricies porttitor conque","user":{"id":"7899453440954285886"}}
+2023-03-19 00:41:01 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: posuere posuere Lorem ipsum sit malesuada massa sit Kafka Lorem posuere dolor yltricies porttitor conque and sending to kafka topic twitter-topic
+2023-03-19 00:41:01 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 7899453440954285886, "id": 87260271748086602, "text": "posuere posuere Lorem ipsum sit malesuada massa sit Kafka Lorem posuere dolor yltricies porttitor conque", "createdAt": 1679186461000}' to topic='twitter-topic' with key '87260271748086602'
+2023-03-19 00:41:11 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:41:11 +0000 2023","id":"5543814872337158598","text":"purus yltricies sit porttitor pulvinar magna Kafka conque lectus consectetuer lectus Lorem","user":{"id":"3842159002259043115"}}
+2023-03-19 00:41:11 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: purus yltricies sit porttitor pulvinar magna Kafka conque lectus consectetuer lectus Lorem and sending to kafka topic twitter-topic
+2023-03-19 00:41:11 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3842159002259043115, "id": 5543814872337158598, "text": "purus yltricies sit porttitor pulvinar magna Kafka conque lectus consectetuer lectus Lorem", "createdAt": 1679186471000}' to topic='twitter-topic' with key '5543814872337158598'
+2023-03-19 00:41:21 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:41:21 +0000 2023","id":"7947007795048051718","text":"porttitor pulvinar yltricies elit Maecenas Java ipsum ipsum dolor massa","user":{"id":"7461905131330323874"}}
+2023-03-19 00:41:21 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: porttitor pulvinar yltricies elit Maecenas Java ipsum ipsum dolor massa and sending to kafka topic twitter-topic
+2023-03-19 00:41:21 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 7461905131330323874, "id": 7947007795048051718, "text": "porttitor pulvinar yltricies elit Maecenas Java ipsum ipsum dolor massa", "createdAt": 1679186481000}' to topic='twitter-topic' with key '7947007795048051718'
+2023-03-19 00:41:31 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:41:31 +0000 2023","id":"4802517606628901578","text":"libero sed ipsum ipsum dolor Elasticsearch malesuada lectus posuere posuere","user":{"id":"4441174798292668696"}}
+2023-03-19 00:41:31 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: libero sed ipsum ipsum dolor Elasticsearch malesuada lectus posuere posuere and sending to kafka topic twitter-topic
+2023-03-19 00:41:31 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 4441174798292668696, "id": 4802517606628901578, "text": "libero sed ipsum ipsum dolor Elasticsearch malesuada lectus posuere posuere", "createdAt": 1679186491000}' to topic='twitter-topic' with key '4802517606628901578'
+2023-03-19 00:41:41 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:41:41 +0000 2023","id":"6179242350691256991","text":"pulvinar magna pulvinar mara Java Maecenas adipiscing dolor","user":{"id":"6281848994133996069"}}
+2023-03-19 00:41:41 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: pulvinar magna pulvinar mara Java Maecenas adipiscing dolor and sending to kafka topic twitter-topic
+2023-03-19 00:41:41 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 6281848994133996069, "id": 6179242350691256991, "text": "pulvinar magna pulvinar mara Java Maecenas adipiscing dolor", "createdAt": 1679186501000}' to topic='twitter-topic' with key '6179242350691256991'
+2023-03-19 00:41:51 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:41:51 +0000 2023","id":"8992876272390426504","text":"conque malesuada elit Maecenas conque libero Kafka sed mara sit consectetuer","user":{"id":"3182362813948419664"}}
+2023-03-19 00:41:51 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: conque malesuada elit Maecenas conque libero Kafka sed mara sit consectetuer and sending to kafka topic twitter-topic
+2023-03-19 00:41:51 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3182362813948419664, "id": 8992876272390426504, "text": "conque malesuada elit Maecenas conque libero Kafka sed mara sit consectetuer", "createdAt": 1679186511000}' to topic='twitter-topic' with key '8992876272390426504'
+2023-03-19 00:42:01 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:42:01 +0000 2023","id":"432358313026665097","text":"mara lectus porttitor amet posuere mara porttitor posuere Java conque purus mara purus pulvinar yltricies elit","user":{"id":"2961829720632477077"}}
+2023-03-19 00:42:01 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: mara lectus porttitor amet posuere mara porttitor posuere Java conque purus mara purus pulvinar yltricies elit and sending to kafka topic twitter-topic
+2023-03-19 00:42:01 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 2961829720632477077, "id": 432358313026665097, "text": "mara lectus porttitor amet posuere mara porttitor posuere Java conque purus mara purus pulvinar yltricies elit", "createdAt": 1679186521000}' to topic='twitter-topic' with key '432358313026665097'
+2023-03-19 00:42:11 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:42:11 +0000 2023","id":"1641170850801185788","text":"malesuada purus purus dolor pulvinar sed dolor Elasticsearch libero libero pulvinar ipsum Lorem pulvinar","user":{"id":"5203242425798441507"}}
+2023-03-19 00:42:11 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: malesuada purus purus dolor pulvinar sed dolor Elasticsearch libero libero pulvinar ipsum Lorem pulvinar and sending to kafka topic twitter-topic
+2023-03-19 00:42:11 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 5203242425798441507, "id": 1641170850801185788, "text": "malesuada purus purus dolor pulvinar sed dolor Elasticsearch libero libero pulvinar ipsum Lorem pulvinar", "createdAt": 1679186531000}' to topic='twitter-topic' with key '1641170850801185788'
+2023-03-19 00:42:21 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:42:21 +0000 2023","id":"5561313294078955744","text":"porttitor ipsum dolor purus Microservices porttitor dolor","user":{"id":"6736914221890426008"}}
+2023-03-19 00:42:21 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: porttitor ipsum dolor purus Microservices porttitor dolor and sending to kafka topic twitter-topic
+2023-03-19 00:42:21 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 6736914221890426008, "id": 5561313294078955744, "text": "porttitor ipsum dolor purus Microservices porttitor dolor", "createdAt": 1679186541000}' to topic='twitter-topic' with key '5561313294078955744'
+2023-03-19 00:42:31 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:42:31 +0000 2023","id":"815548294550737815","text":"Maecenas sit Lorem Spring malesuada dolor","user":{"id":"2047094614126480824"}}
+2023-03-19 00:42:31 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: Maecenas sit Lorem Spring malesuada dolor and sending to kafka topic twitter-topic
+2023-03-19 00:42:31 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 2047094614126480824, "id": 815548294550737815, "text": "Maecenas sit Lorem Spring malesuada dolor", "createdAt": 1679186551000}' to topic='twitter-topic' with key '815548294550737815'
+2023-03-19 00:42:41 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:42:41 +0000 2023","id":"7080378606505177511","text":"porttitor ipsum sed sit adipiscing ipsum Elasticsearch lectus mara pulvinar purus","user":{"id":"5568393046925816050"}}
+2023-03-19 00:42:41 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: porttitor ipsum sed sit adipiscing ipsum Elasticsearch lectus mara pulvinar purus and sending to kafka topic twitter-topic
+2023-03-19 00:42:41 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 5568393046925816050, "id": 7080378606505177511, "text": "porttitor ipsum sed sit adipiscing ipsum Elasticsearch lectus mara pulvinar purus", "createdAt": 1679186561000}' to topic='twitter-topic' with key '7080378606505177511'
+2023-03-19 00:42:51 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:42:51 +0000 2023","id":"3456635700285079137","text":"pulvinar Maecenas consectetuer Maecenas Maecenas conque dolor Kafka magna magna yltricies yltricies posuere","user":{"id":"451053818522518660"}}
+2023-03-19 00:42:51 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: pulvinar Maecenas consectetuer Maecenas Maecenas conque dolor Kafka magna magna yltricies yltricies posuere and sending to kafka topic twitter-topic
+2023-03-19 00:42:51 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 451053818522518660, "id": 3456635700285079137, "text": "pulvinar Maecenas consectetuer Maecenas Maecenas conque dolor Kafka magna magna yltricies yltricies posuere", "createdAt": 1679186571000}' to topic='twitter-topic' with key '3456635700285079137'
+2023-03-19 00:43:01 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:43:01 +0000 2023","id":"3567080065654786517","text":"sed amet ipsum conque massa massa libero Elasticsearch ipsum ipsum dolor amet dolor consectetuer","user":{"id":"9126747989168966756"}}
+2023-03-19 00:43:01 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: sed amet ipsum conque massa massa libero Elasticsearch ipsum ipsum dolor amet dolor consectetuer and sending to kafka topic twitter-topic
+2023-03-19 00:43:01 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 9126747989168966756, "id": 3567080065654786517, "text": "sed amet ipsum conque massa massa libero Elasticsearch ipsum ipsum dolor amet dolor consectetuer", "createdAt": 1679186581000}' to topic='twitter-topic' with key '3567080065654786517'
+2023-03-19 00:43:11 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:43:11 +0000 2023","id":"3870615075791112741","text":"amet sed malesuada conque adipiscing malesuada posuere Elasticsearch dolor magna porttitor libero lectus","user":{"id":"2363001029690031386"}}
+2023-03-19 00:43:11 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: amet sed malesuada conque adipiscing malesuada posuere Elasticsearch dolor magna porttitor libero lectus and sending to kafka topic twitter-topic
+2023-03-19 00:43:11 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 2363001029690031386, "id": 3870615075791112741, "text": "amet sed malesuada conque adipiscing malesuada posuere Elasticsearch dolor magna porttitor libero lectus", "createdAt": 1679186591000}' to topic='twitter-topic' with key '3870615075791112741'
+2023-03-19 00:43:21 [pool-1-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Mar 19 00:43:21 +0000 2023","id":"6381637969512345155","text":"pulvinar amet ipsum Microservices dolor dolor","user":{"id":"3570702852729117151"}}
+2023-03-19 00:43:21 [pool-1-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: pulvinar amet ipsum Microservices dolor dolor and sending to kafka topic twitter-topic
+2023-03-19 00:43:21 [pool-1-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3570702852729117151, "id": 6381637969512345155, "text": "pulvinar amet ipsum Microservices dolor dolor", "createdAt": 1679186601000}' to topic='twitter-topic' with key '6381637969512345155'
+2023-03-19 00:43:22 [SpringContextShutdownHook] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Closing Kafka Producer
+2023-03-19 00:43:22 [SpringContextShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
