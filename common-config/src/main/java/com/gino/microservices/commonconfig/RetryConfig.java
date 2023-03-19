@@ -1,6 +1,6 @@
 package com.gino.microservices.commonconfig;
 
-import com.gino.microservices.configdata.RetryConfigData;
+import com.gino.microservices.configdata.config.RetryConfigData;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

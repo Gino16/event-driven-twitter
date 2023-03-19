@@ -1,7 +1,7 @@
 package com.gino.microservices.kafkaproducer.config;
 
-import com.gino.microservices.configdata.KafkaConfigData;
-import com.gino.microservices.configdata.KafkaProducerConfigData;
+import com.gino.microservices.configdata.config.KafkaConfigData;
+import com.gino.microservices.configdata.config.KafkaProducerConfigData;
 import lombok.RequiredArgsConstructor;
 import org.apache.avro.specific.SpecificRecordBase;
 import org.apache.kafka.clients.producer.ProducerConfig;

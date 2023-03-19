@@ -1,7 +1,7 @@
 package com.gino.microservices.kafkaadmin.client;
 
-import com.gino.microservices.configdata.KafkaConfigData;
-import com.gino.microservices.configdata.RetryConfigData;
+import com.gino.microservices.configdata.config.KafkaConfigData;
+import com.gino.microservices.configdata.config.RetryConfigData;
 import com.gino.microservices.kafkaadmin.exception.KafkaClientException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

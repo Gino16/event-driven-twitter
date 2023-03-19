@@ -1,6 +1,6 @@
 package com.gino.microservices.twittertokafkaservice;
 
-import com.gino.microservices.configdata.TwitterToKafkaServiceConfigData;
+import com.gino.microservices.configdata.config.TwitterToKafkaServiceConfigData;
 import com.gino.microservices.twittertokafkaservice.init.StreamInitializer;
 import com.gino.microservices.twittertokafkaservice.runner.StreamRunner;
 import lombok.RequiredArgsConstructor;

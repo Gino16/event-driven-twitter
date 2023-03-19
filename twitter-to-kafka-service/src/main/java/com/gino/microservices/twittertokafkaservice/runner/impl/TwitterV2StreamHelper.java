@@ -1,7 +1,7 @@
 package com.gino.microservices.twittertokafkaservice.runner.impl;
 
 
-import com.gino.microservices.configdata.TwitterToKafkaServiceConfigData;
+import com.gino.microservices.configdata.config.TwitterToKafkaServiceConfigData;
 import com.gino.microservices.twittertokafkaservice.listeners.TwitterToKafkaStatusListener;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -1,4 +1,4 @@
-package com.gino.microservices.configdata;
+package com.gino.microservices.configdata.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

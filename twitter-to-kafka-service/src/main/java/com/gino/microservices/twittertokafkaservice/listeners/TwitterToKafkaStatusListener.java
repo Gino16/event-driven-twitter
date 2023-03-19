@@ -1,6 +1,6 @@
 package com.gino.microservices.twittertokafkaservice.listeners;
 
-import com.gino.microservices.configdata.KafkaConfigData;
+import com.gino.microservices.configdata.config.KafkaConfigData;
 import com.gino.microservices.kafkaproducer.service.KafkaProducer;
 import com.gino.microservices.twittertokafkaservice.transformer.TwitterStatusToAvroTransformer;
 import com.microservices.kafka.avro.model.TwitterAvroModel;
