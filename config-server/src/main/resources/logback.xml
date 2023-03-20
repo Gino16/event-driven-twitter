@@ -4,5 +4,4 @@
   <property name="APP_NAME" value="twitter-to-kafka-service"/>
 
   <include resourc="logback-common.xml"/>
-
 </configuration>
