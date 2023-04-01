@@ -5,4 +5,14 @@ spring:
     config:
       server:
         git:
-          uri: file://Users/gascenci/Documents/practicas/event-driven-twitter/config-server-repository
+#          uri: file://C:/Users/ginof/Documents/Projects/event-driven-twitter/config-server-repository
+          clone-on-start: true
+          default-label: main
+          uri: https://github.com/Gino16/twitter-config-server.git
+          username: Gino16
+          password: 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
+      fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
