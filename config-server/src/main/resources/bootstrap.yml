@@ -7,12 +7,12 @@ spring:
         git:
 #          uri: file://C:/Users/ginof/Documents/Projects/event-driven-twitter/config-server-repository
           clone-on-start: true
-          default-label: main
-          uri: https://github.com/Gino16/twitter-config-server.git
-          username: Gino16
-          password: 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
+          default-label: '{cipher}ce8b963328a941dc6b8c5f7d6a0977a3344c4a06a5fe073e69a59b9e75ec2d24'
+          uri: '{cipher}afc8352ef7bfde20103da8a3003bd17c731e208792cf150e4573ca82e6c316feac0ff7365d8947310e892efa6ad7ac5c3ad4bd1a7ee6e5ff49f5801088dd7b1188300c8c99205ede998c4527cc9b78b3'
+          username: '{cipher}3bac2ca0202595fa94c80e9609289e04217227348995b036a11b6641a8fac7bf'
+          password: '{cipher}22736447b7a3dc66e4499def7f31540b9646aeb789965fc5fe0518f16585a12feea89f002db52dad045d2186ec744fadb0d17d981cf08f9b3daa6546e5134929'
       fail-fast: true
   security:
     user:
-      name: spring_cloud_user
-      password: springCloud_Pwd!
+      name: '{cipher}616c51abe4272fa21c175ee9a8ad65254539030ee0c9ffbb05128b6a4dcfd0447e20beb2491acdf33d011d3d82662756'
+      password: '{cipher}7972635cf289badc9f6e3ec2e19b827078533e79e41acffbf7cae56846155722e76000c21a85f2decadffeadb6699bbc'
