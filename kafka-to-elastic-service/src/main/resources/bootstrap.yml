@@ -7,5 +7,5 @@ spring:
     config:
       name: kafka-to-elastic-service,config-client
       uri: http://localhost:8888
-      username: '{cipher}e215048afbbdb7f8159cd4825d1aa977ec34e5e9a6a9fe802a1a52c3265e3f649e53959198a6b2dd67d91ec9e9b027d1'
-      password: '{cipher}e41fe4781d52f2a7ed1700d36a5681e46e206dba7e6d2ecef954ac35d4ecb7ebf79fc9810d31b6e96fc33efd0d5b3a79'
+      username: '{cipher}53a3e788492a5be6aa85fb24fa33465276c80fc079c54bf57eaddae762ed186a31dd7a5d77fa2ed5d8c6c60aab5fb969'
+      password: '{cipher}17c19ad709b52df79e33993980b480feab3f1960ba5f4068358200fa1d6e41167db3ceceae4d0107632bd1fcf73c4a45'

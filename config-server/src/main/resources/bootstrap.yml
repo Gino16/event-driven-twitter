@@ -7,12 +7,12 @@ spring:
         git:
 #          uri: file://C:/Users/ginof/Documents/Projects/event-driven-twitter/config-server-repository
           clone-on-start: true
-          default-label: '{cipher}ce8b963328a941dc6b8c5f7d6a0977a3344c4a06a5fe073e69a59b9e75ec2d24'
-          uri: '{cipher}afc8352ef7bfde20103da8a3003bd17c731e208792cf150e4573ca82e6c316feac0ff7365d8947310e892efa6ad7ac5c3ad4bd1a7ee6e5ff49f5801088dd7b1188300c8c99205ede998c4527cc9b78b3'
-          username: '{cipher}3bac2ca0202595fa94c80e9609289e04217227348995b036a11b6641a8fac7bf'
-          password: '{cipher}22736447b7a3dc66e4499def7f31540b9646aeb789965fc5fe0518f16585a12feea89f002db52dad045d2186ec744fadb0d17d981cf08f9b3daa6546e5134929'
+          default-label: '{cipher}ffed9d15c46b154fe4937a2493920d8ac2b35299768887e0ae4b1563ea3013bb'
+          uri: '{cipher}bad6973c73a54512101375f62dc4d7a07b419ee5a6db665ddea197c552845e1f3b629a33221558c5206cc25f53572fbf6440b9826db4c6d6ae91ef5871bfbe6c'
+          username: '{cipher}02336263bf2a55446fc8dc30c4c1e8a7a102cd3c2d74124ce5d70e479780164d'
+          password: '{cipher}a5d01e73a645e85c761e61486e5e5f62953297f46693ac5b8fe3e3b81243a27f36a8e7d1997f7213569170cc6b49f3053f74482f0f3abbe3f1644a19a2a06b84'
       fail-fast: true
   security:
     user:
-      name: '{cipher}616c51abe4272fa21c175ee9a8ad65254539030ee0c9ffbb05128b6a4dcfd0447e20beb2491acdf33d011d3d82662756'
-      password: '{cipher}7972635cf289badc9f6e3ec2e19b827078533e79e41acffbf7cae56846155722e76000c21a85f2decadffeadb6699bbc'
+      name: '{cipher}53a3e788492a5be6aa85fb24fa33465276c80fc079c54bf57eaddae762ed186a31dd7a5d77fa2ed5d8c6c60aab5fb969'
+      password: '{cipher}17c19ad709b52df79e33993980b480feab3f1960ba5f4068358200fa1d6e41167db3ceceae4d0107632bd1fcf73c4a45'
