@@ -10,6 +10,12 @@
     </parent>
 
     <artifactId>elastic</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>elastic-config</module>
+        <module>elastic-model</module>
+        <module>elastic-index-client</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

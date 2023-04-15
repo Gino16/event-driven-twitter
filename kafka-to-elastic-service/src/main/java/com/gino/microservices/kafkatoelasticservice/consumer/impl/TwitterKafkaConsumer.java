@@ -1,10 +1,15 @@
 package com.gino.microservices.kafkatoelasticservice.consumer.impl;
 
 import com.gino.microservices.configdata.config.KafkaConfigData;
+import com.gino.microservices.configdata.config.KafkaConsumerConfigData;
+import com.gino.microservices.elasticindexclient.service.ElasticIndexClient;
+import com.gino.microservices.elasticmodel.model.index.impl.TwitterIndexModel;
 import com.gino.microservices.kafkaadmin.client.KafkaAdminClient;
 import com.gino.microservices.kafkatoelasticservice.consumer.KafkaConsumer;
+import com.gino.microservices.kafkatoelasticservice.transformer.AvroToElasticModelTransformer;
 import com.microservices.kafka.avro.model.TwitterAvroModel;
 import java.util.List;
+import java.util.Objects;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.event.ApplicationStartedEvent;
@@ -23,11 +28,13 @@ public class TwitterKafkaConsumer implements KafkaConsumer<Long, TwitterAvroMode
 
   private final KafkaListenerEndpointRegistry kafkaListenerEndpointRegistry;
   private final KafkaAdminClient kafkaAdminClient;
-
   private final KafkaConfigData kafkaConfigData;
+  private final KafkaConsumerConfigData kafkaConsumerConfigData;
+  private final AvroToElasticModelTransformer avroToElasticModelTransformer;
+  private final ElasticIndexClient<TwitterIndexModel> elasticIndexClient;
 
   @Override
-  @KafkaListener(id = "twitterTopicListener", topics = "${kafka-config.topic-name}")
+  @KafkaListener(id = "${kafka-consumer-config.consumer-group-id}", topics = "${kafka-config.topic-name}")
   public void receive(
       @Payload List<TwitterAvroModel> messages,
       @Header(KafkaHeaders.RECEIVED_MESSAGE_KEY) List<Integer> keys,
@@ -40,12 +47,18 @@ public class TwitterKafkaConsumer implements KafkaConsumer<Long, TwitterAvroMode
         partitions.toString(),
         offsets.toString(),
         Thread.currentThread().getId());
+    List<TwitterIndexModel> twitterIndexModels = avroToElasticModelTransformer.getElasticModels(
+        messages);
+    List<String> documentIds = elasticIndexClient.save(twitterIndexModels);
+    log.info("Documents save to elastic search with ids: {}", documentIds.toArray());
   }
 
   @EventListener
   public void onAppStarted(ApplicationStartedEvent event) {
     kafkaAdminClient.checkTopicsCreated();
-    log.info("Topics with name {} is ready for operations!", kafkaConfigData.getTopicNamesToCreate().toArray());
-    kafkaListenerEndpointRegistry.getListenerContainer("twitterTopicListener").start();
+    log.info("Topics with name {} is ready for operations!",
+        kafkaConfigData.getTopicNamesToCreate().toArray());
+    Objects.requireNonNull(kafkaListenerEndpointRegistry.getListenerContainer(
+        kafkaConsumerConfigData.getConsumerGroupId())).start();
   }
 }

@@ -12,13 +12,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaStreamInitializer implements StreamInitializer {
 
-    private final KafkaConfigData kafkaConfigData;
-    private final KafkaAdminClient kafkaAdminClient;
+  private final KafkaConfigData kafkaConfigData;
+  private final KafkaAdminClient kafkaAdminClient;
 
-    @Override
-    public void init() {
-        kafkaAdminClient.createTopics();
-        kafkaAdminClient.checkSchemaRegistry();
-        log.info("Topics with name {} is ready for operations!", kafkaConfigData.getTopicNamesToCreate().toArray());
-    }
+  @Override
+  public void init() {
+    kafkaAdminClient.createTopics();
+    kafkaAdminClient.checkSchemaRegistry();
+    log.info("Topics with name {} is ready for operations!",
+        kafkaConfigData.getTopicNamesToCreate().toArray());
+  }
 }
