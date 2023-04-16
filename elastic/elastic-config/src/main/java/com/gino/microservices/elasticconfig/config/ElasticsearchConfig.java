@@ -17,7 +17,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @Configuration
 @RequiredArgsConstructor
-@EnableElasticsearchRepositories(basePackages = "com.gino.microservices.elasticindexclient.repository")
+@EnableElasticsearchRepositories(basePackages = "com.gino.microservices")
 public class ElasticsearchConfig extends AbstractElasticsearchConfiguration {
 
   private final ElasticConfigData elasticConfigData;
