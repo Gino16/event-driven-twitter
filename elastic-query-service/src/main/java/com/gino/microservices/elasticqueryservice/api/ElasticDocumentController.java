@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/documents")
+@RequestMapping(value = "/documents")
 @Slf4j
 public class ElasticDocumentController {
 
