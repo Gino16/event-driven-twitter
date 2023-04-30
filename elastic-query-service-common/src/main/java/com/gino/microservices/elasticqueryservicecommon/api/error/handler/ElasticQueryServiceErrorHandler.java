@@ -1,4 +1,4 @@
-package com.gino.microservices.elasticqueryservice.api.error.handler;
+package com.gino.microservices.elasticqueryservicecommon.api.error.handler;
 
 import java.util.HashMap;
 import java.util.Map;

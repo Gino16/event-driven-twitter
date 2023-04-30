@@ -1,4 +1,4 @@
-package com.gino.microservices.elasticqueryservice.model;
+package com.gino.microservices.elasticqueryservicecommon.model;
 
 import javax.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package com.gino.microservices.elasticqueryservice.model;
+package com.gino.microservices.elasticqueryservicecommon.model;
 
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;

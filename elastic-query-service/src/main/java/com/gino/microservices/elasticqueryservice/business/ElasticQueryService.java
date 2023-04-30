@@ -1,7 +1,6 @@
 package com.gino.microservices.elasticqueryservice.business;
 
-import com.gino.microservices.elasticqueryservice.model.ElasticQueryServiceResponseModel;
-
+import com.gino.microservices.elasticqueryservicecommon.model.ElasticQueryServiceResponseModel;
 import java.util.List;
 
 public interface ElasticQueryService {

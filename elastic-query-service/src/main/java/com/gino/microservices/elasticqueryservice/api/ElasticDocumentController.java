@@ -1,8 +1,8 @@
 package com.gino.microservices.elasticqueryservice.api;
 
 import com.gino.microservices.elasticqueryservice.business.ElasticQueryService;
-import com.gino.microservices.elasticqueryservice.model.ElasticQueryServiceRequestModel;
-import com.gino.microservices.elasticqueryservice.model.ElasticQueryServiceResponseModel;
+import com.gino.microservices.elasticqueryservicecommon.model.ElasticQueryServiceRequestModel;
+import com.gino.microservices.elasticqueryservicecommon.model.ElasticQueryServiceResponseModel;
 import java.util.List;
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;

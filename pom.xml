@@ -30,6 +30,8 @@
     <module>elastic/elastic-query-client</module>
     <module>common-util</module>
     <module>elastic-query-service</module>
+    <module>elastic-query-service-common</module>
+    <module>reactive-elastic-query-service</module>
   </modules>
   <properties>
     <java.version>11</java.version>
@@ -59,7 +61,12 @@
       <dependency>
         <groupId>com.gino.microservices</groupId>
         <artifactId>common-config</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.gino.microservices</groupId>
+        <artifactId>elastic-query-service-common</artifactId>
+        <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>com.gino.microservices</groupId>
@@ -79,7 +86,7 @@
       <dependency>
         <groupId>com.gino.microservices</groupId>
         <artifactId>kafka-consumer</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${project.version}</version>
       </dependency>
       <dependency>
         <groupId>com.gino.microservices</groupId>

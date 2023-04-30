@@ -5,14 +5,11 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 import com.gino.microservices.elasticmodel.model.index.impl.TwitterIndexModel;
 import com.gino.microservices.elasticqueryservice.api.ElasticDocumentController;
-import com.gino.microservices.elasticqueryservice.model.ElasticQueryServiceResponseModel;
-import com.gino.microservices.elasticqueryservice.transformer.ElasticToResponseModelTransformer;
+import com.gino.microservices.elasticqueryservicecommon.model.ElasticQueryServiceResponseModel;
+import com.gino.microservices.elasticqueryservicecommon.transformer.ElasticToResponseModelTransformer;
 import java.util.List;
 import java.util.stream.Collectors;
-import lombok.RequiredArgsConstructor;
-import org.springframework.hateoas.RepresentationModel;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
-import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.stereotype.Component;
 
 @Component

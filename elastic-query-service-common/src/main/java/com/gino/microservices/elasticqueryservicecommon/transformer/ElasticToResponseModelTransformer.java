@@ -1,11 +1,10 @@
-package com.gino.microservices.elasticqueryservice.transformer;
+package com.gino.microservices.elasticqueryservicecommon.transformer;
 
 import com.gino.microservices.elasticmodel.model.index.impl.TwitterIndexModel;
-import com.gino.microservices.elasticqueryservice.model.ElasticQueryServiceResponseModel;
-import org.springframework.stereotype.Component;
-
+import com.gino.microservices.elasticqueryservicecommon.model.ElasticQueryServiceResponseModel;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.springframework.stereotype.Component;
 
 @Component
 public class ElasticToResponseModelTransformer {
