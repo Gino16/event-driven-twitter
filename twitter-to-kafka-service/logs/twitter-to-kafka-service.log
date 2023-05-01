@@ -462,3 +462,473 @@ Caused by: org.apache.kafka.common.errors.TimeoutException: Timed out waiting fo
 2023-04-30 00:18:39 [pool-3-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: libero yltricies adipiscing pulvinar consectetuer dolor amet lectus Spring mara pulvinar conque Maecenas Lorem Lorem adipiscing and sending to kafka topic twitter-topic
 2023-04-30 00:18:39 [pool-3-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 6029191100632106422, "id": 1504335358366132938, "text": "libero yltricies adipiscing pulvinar consectetuer dolor amet lectus Spring mara pulvinar conque Maecenas Lorem Lorem adipiscing", "createdAt": 1682831919000}' to topic='twitter-topic' with key '1504335358366132938'
 2023-04-30 00:18:39 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:40 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:41 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:42 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:43 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:44 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:45 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:46 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:47 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:48 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:49 [pool-3-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Apr 30 00:18:49 -0500 2023","id":"1367796116800139880","text":"lectus massa adipiscing Lorem porttitor dolor mara Microservices consectetuer porttitor dolor malesuada pulvinar posuere","user":{"id":"1113092605352249869"}}
+2023-04-30 00:18:49 [pool-3-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: lectus massa adipiscing Lorem porttitor dolor mara Microservices consectetuer porttitor dolor malesuada pulvinar posuere and sending to kafka topic twitter-topic
+2023-04-30 00:18:49 [pool-3-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 1113092605352249869, "id": 1367796116800139880, "text": "lectus massa adipiscing Lorem porttitor dolor mara Microservices consectetuer porttitor dolor malesuada pulvinar posuere", "createdAt": 1682831929000}' to topic='twitter-topic' with key '1367796116800139880'
+2023-04-30 00:18:49 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:50 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:51 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:52 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:53 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:54 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:55 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:56 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:57 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:59 [pool-3-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Apr 30 00:18:59 -0500 2023","id":"2025385502621715668","text":"massa amet Lorem purus consectetuer Maecenas Kafka sit ipsum libero yltricies","user":{"id":"3922145453898827698"}}
+2023-04-30 00:18:59 [pool-3-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: massa amet Lorem purus consectetuer Maecenas Kafka sit ipsum libero yltricies and sending to kafka topic twitter-topic
+2023-04-30 00:18:59 [pool-3-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3922145453898827698, "id": 2025385502621715668, "text": "massa amet Lorem purus consectetuer Maecenas Kafka sit ipsum libero yltricies", "createdAt": 1682831939000}' to topic='twitter-topic' with key '2025385502621715668'
+2023-04-30 00:18:59 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:18:59 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:00 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:01 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:02 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:03 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:04 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:06 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:06 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:07 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:08 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:09 [pool-3-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Apr 30 00:19:09 -0500 2023","id":"8289223593022132558","text":"magna elit lectus adipiscing massa mara dolor Java lectus adipiscing ipsum Maecenas ipsum","user":{"id":"4960865697458347477"}}
+2023-04-30 00:19:09 [pool-3-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: magna elit lectus adipiscing massa mara dolor Java lectus adipiscing ipsum Maecenas ipsum and sending to kafka topic twitter-topic
+2023-04-30 00:19:09 [pool-3-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 4960865697458347477, "id": 8289223593022132558, "text": "magna elit lectus adipiscing massa mara dolor Java lectus adipiscing ipsum Maecenas ipsum", "createdAt": 1682831949000}' to topic='twitter-topic' with key '8289223593022132558'
+2023-04-30 00:19:09 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:10 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:11 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:12 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:13 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:14 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:15 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:16 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:17 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:18 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:19 [pool-3-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Apr 30 00:19:19 -0500 2023","id":"1973950528142842710","text":"porttitor Lorem sit malesuada purus purus porttitor Elasticsearch pulvinar sed sed posuere conque sit","user":{"id":"3687457847505340940"}}
+2023-04-30 00:19:19 [pool-3-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: porttitor Lorem sit malesuada purus purus porttitor Elasticsearch pulvinar sed sed posuere conque sit and sending to kafka topic twitter-topic
+2023-04-30 00:19:19 [pool-3-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 3687457847505340940, "id": 1973950528142842710, "text": "porttitor Lorem sit malesuada purus purus porttitor Elasticsearch pulvinar sed sed posuere conque sit", "createdAt": 1682831959000}' to topic='twitter-topic' with key '1973950528142842710'
+2023-04-30 00:19:19 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:20 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:21 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:22 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:23 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:24 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:25 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:26 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:27 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:28 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:29 [pool-3-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Apr 30 00:19:29 -0500 2023","id":"385579568979357461","text":"sit consectetuer lectus ipsum sed yltricies porttitor Elasticsearch amet sed pulvinar yltricies Maecenas Lorem","user":{"id":"2406582391683595874"}}
+2023-04-30 00:19:29 [pool-3-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: sit consectetuer lectus ipsum sed yltricies porttitor Elasticsearch amet sed pulvinar yltricies Maecenas Lorem and sending to kafka topic twitter-topic
+2023-04-30 00:19:29 [pool-3-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 2406582391683595874, "id": 385579568979357461, "text": "sit consectetuer lectus ipsum sed yltricies porttitor Elasticsearch amet sed pulvinar yltricies Maecenas Lorem", "createdAt": 1682831969000}' to topic='twitter-topic' with key '385579568979357461'
+2023-04-30 00:19:29 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:30 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:31 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:32 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:33 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:34 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:35 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:36 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:37 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 45927209054344409, "id": 4781359097919580323, "text": "yltricies libero conque amet mara lectus Elasticsearch purus yltricies porttitor Maecenas ipsum", "createdAt": 1682831858000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:239)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='4781359097919580323' and payload='{"userId": 45927209054344409, "id": 4781359097919580323, "text": "yltricies libero conque amet mara ...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 1792537053475583827, "id": 4311437011221790257, "text": "mara lectus sit Spring sit Maecenas", "createdAt": 1682831888000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:239)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='4311437011221790257' and payload='{"userId": 1792537053475583827, "id": 4311437011221790257, "text": "mara lectus sit Spring sit Maece...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 658431059824547245, "id": 5766734454904135862, "text": "malesuada posuere Lorem porttitor Maecenas dolor ipsum pulvinar Microservices elit lectus posuere Maecenas Lorem amet", "createdAt": 1682831908000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:239)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='5766734454904135862' and payload='{"userId": 658431059824547245, "id": 5766734454904135862, "text": "malesuada posuere Lorem porttitor...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 6029191100632106422, "id": 1504335358366132938, "text": "libero yltricies adipiscing pulvinar consectetuer dolor amet lectus Spring mara pulvinar conque Maecenas Lorem Lorem adipiscing", "createdAt": 1682831919000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:239)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='1504335358366132938' and payload='{"userId": 6029191100632106422, "id": 1504335358366132938, "text": "libero yltricies adipiscing pulv...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 1113092605352249869, "id": 1367796116800139880, "text": "lectus massa adipiscing Lorem porttitor dolor mara Microservices consectetuer porttitor dolor malesuada pulvinar posuere", "createdAt": 1682831929000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:239)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='1367796116800139880' and payload='{"userId": 1113092605352249869, "id": 1367796116800139880, "text": "lectus massa adipiscing Lorem po...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 4960865697458347477, "id": 8289223593022132558, "text": "magna elit lectus adipiscing massa mara dolor Java lectus adipiscing ipsum Maecenas ipsum", "createdAt": 1682831949000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:239)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:38 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='8289223593022132558' and payload='{"userId": 4960865697458347477, "id": 8289223593022132558, "text": "magna elit lectus adipiscing mas...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 6 record(s) for twitter-topic-1:120013 ms has passed since batch creation
+2023-04-30 00:19:39 [pool-3-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Apr 30 00:19:39 -0500 2023","id":"5973032103066038745","text":"yltricies massa lectus yltricies Elasticsearch magna consectetuer","user":{"id":"2354697797620583647"}}
+2023-04-30 00:19:39 [pool-3-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: yltricies massa lectus yltricies Elasticsearch magna consectetuer and sending to kafka topic twitter-topic
+2023-04-30 00:19:39 [pool-3-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 2354697797620583647, "id": 5973032103066038745, "text": "yltricies massa lectus yltricies Elasticsearch magna consectetuer", "createdAt": 1682831979000}' to topic='twitter-topic' with key '5973032103066038745'
+2023-04-30 00:19:39 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:40 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:41 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:42 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:43 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:44 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:45 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:46 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:47 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:48 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:48 [SpringContextShutdownHook] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Closing Kafka Producer
+2023-04-30 00:19:48 [SpringContextShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2023-04-30 00:19:48 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 429707187096585156, "id": 5108896490892493371, "text": "ipsum dolor mara elit Maecenas Spring conque lectus libero consectetuer", "createdAt": 1682831868000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:252)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+2023-04-30 00:19:48 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='5108896490892493371' and payload='{"userId": 429707187096585156, "id": 5108896490892493371, "text": "ipsum dolor mara elit Maecenas Sp...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+2023-04-30 00:19:48 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 5800534624621461826, "id": 564441058977421110, "text": "yltricies dolor posuere libero libero Maecenas Java yltricies porttitor ipsum dolor", "createdAt": 1682831898000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:252)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+2023-04-30 00:19:48 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='564441058977421110' and payload='{"userId": 5800534624621461826, "id": 564441058977421110, "text": "yltricies dolor posuere libero li...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+2023-04-30 00:19:48 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 3922145453898827698, "id": 2025385502621715668, "text": "massa amet Lorem purus consectetuer Maecenas Kafka sit ipsum libero yltricies", "createdAt": 1682831939000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:252)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+2023-04-30 00:19:48 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='2025385502621715668' and payload='{"userId": 3922145453898827698, "id": 2025385502621715668, "text": "massa amet Lorem purus consectet...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+2023-04-30 00:19:48 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 3687457847505340940, "id": 1973950528142842710, "text": "porttitor Lorem sit malesuada purus purus porttitor Elasticsearch pulvinar sed sed posuere conque sit", "createdAt": 1682831959000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:252)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+2023-04-30 00:19:48 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='1973950528142842710' and payload='{"userId": 3687457847505340940, "id": 1973950528142842710, "text": "porttitor Lorem sit malesuada pu...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 4 record(s) for twitter-topic-0:120010 ms has passed since batch creation
+2023-04-30 00:19:49 [pool-3-thread-1] INFO  c.g.m.t.r.impl.MockKafkaStreamRunner - formattedTweetAsRawJson {"created_at":"Sun Apr 30 00:19:49 -0500 2023","id":"3872340770153027172","text":"amet sed Maecenas magna Microservices magna dolor","user":{"id":"8432114414055713081"}}
+2023-04-30 00:19:49 [pool-3-thread-1] INFO  c.g.m.t.l.TwitterToKafkaStatusListener - Received status: amet sed Maecenas magna Microservices magna dolor and sending to kafka topic twitter-topic
+2023-04-30 00:19:49 [pool-3-thread-1] INFO  c.g.m.k.s.impl.TwitterKafkaProducer - Sending message='{"userId": 8432114414055713081, "id": 3872340770153027172, "text": "amet sed Maecenas magna Microservices magna dolor", "createdAt": 1682831989000}' to topic='twitter-topic' with key '3872340770153027172'
+2023-04-30 00:19:49 [pool-3-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-2
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2023-04-30 00:19:49 [pool-3-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://localhost:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-04-30 00:19:49 [pool-3-thread-1] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2023-04-30 00:19:49 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2023-04-30 00:19:49 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2023-04-30 00:19:49 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1682831989073
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:49 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:50 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:51 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:51 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:51 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:51 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:51 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:51 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:51 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:52 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:52 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:52 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:52 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:52 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:52 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:52 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:53 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:53 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:53 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:53 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:53 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:53 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:53 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:54 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:54 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:54 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:54 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:54 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:55 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:55 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:55 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:55 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:55 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:55 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:56 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:56 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:56 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:56 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:56 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:56 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:56 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:57 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:57 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:57 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:57 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:57 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:57 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:57 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node 3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 7752871872136206075, "id": 7879453799803827993, "text": "posuere magna conque libero sed Maecenas elit Spring purus amet amet massa dolor", "createdAt": 1682831878000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for twitter-topic-2:120007 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:252)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for twitter-topic-2:120007 ms has passed since batch creation
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='7879453799803827993' and payload='{"userId": 7752871872136206075, "id": 7879453799803827993, "text": "posuere magna conque libero sed ...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for twitter-topic-2:120007 ms has passed since batch creation
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 2406582391683595874, "id": 385579568979357461, "text": "sit consectetuer lectus ipsum sed yltricies porttitor Elasticsearch amet sed pulvinar yltricies Maecenas Lorem", "createdAt": 1682831969000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for twitter-topic-2:120007 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:252)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for twitter-topic-2:120007 ms has passed since batch creation
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='385579568979357461' and payload='{"userId": 2406582391683595874, "id": 385579568979357461, "text": "sit consectetuer lectus ipsum sed...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for twitter-topic-2:120007 ms has passed since batch creation
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-1] ERROR c.g.m.k.s.impl.TwitterKafkaProducer - Error while sending message {"userId": 2354697797620583647, "id": 5973032103066038745, "text": "yltricies massa lectus yltricies Elasticsearch magna consectetuer", "createdAt": 1682831979000} to topic twitter-topic
+org.springframework.kafka.core.KafkaProducerException: Failed to send; nested exception is org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for twitter-topic-2:120007 ms has passed since batch creation
+	at org.springframework.kafka.core.KafkaTemplate.lambda$buildCallback$4(KafkaTemplate.java:603)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer$1.onCompletion(DefaultKafkaProducerFactory.java:790)
+	at org.apache.kafka.clients.producer.KafkaProducer$InterceptorCallback.onCompletion(KafkaProducer.java:1356)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.completeFutureAndFireCallbacks(ProducerBatch.java:231)
+	at org.apache.kafka.clients.producer.internals.ProducerBatch.done(ProducerBatch.java:197)
+	at org.apache.kafka.clients.producer.internals.Sender.failBatch(Sender.java:676)
+	at org.apache.kafka.clients.producer.internals.Sender.sendProducerData(Sender.java:380)
+	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:323)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:252)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for twitter-topic-2:120007 ms has passed since batch creation
+2023-04-30 00:19:58 [kafka-producer-network-thread | producer-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='5973032103066038745' and payload='{"userId": 2354697797620583647, "id": 5973032103066038745, "text": "yltricies massa lectus yltricies...' to topic twitter-topic:
+org.apache.kafka.common.errors.TimeoutException: Expiring 3 record(s) for twitter-topic-2:120007 ms has passed since batch creation
+2023-04-30 00:19:59 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:19:59 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:19:59 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:19:59 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:19:59 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:19:59 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
+2023-04-30 00:20:00 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -3 (localhost/127.0.0.1:39092) could not be established. Broker may not be available.
+2023-04-30 00:20:00 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:39092 (id: -3 rack: null) disconnected
+2023-04-30 00:20:00 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -1 (localhost/127.0.0.1:19092) could not be established. Broker may not be available.
+2023-04-30 00:20:00 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:19092 (id: -1 rack: null) disconnected
+2023-04-30 00:20:00 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Connection to node -2 (localhost/127.0.0.1:29092) could not be established. Broker may not be available.
+2023-04-30 00:20:00 [kafka-producer-network-thread | producer-2] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-2] Bootstrap broker localhost:29092 (id: -2 rack: null) disconnected
