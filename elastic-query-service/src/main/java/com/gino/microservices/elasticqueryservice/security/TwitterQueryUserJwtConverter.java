@@ -1,5 +1,7 @@
 package com.gino.microservices.elasticqueryservice.security;
 
+import static com.gino.microservices.elasticqueryservice.Constants.NA;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
@@ -35,7 +37,7 @@ public class TwitterQueryUserJwtConverter implements Converter<Jwt, AbstractAuth
                 jwt.getClaimAsString(PREFERRED_USERNAME_CLAIM)))
         .map(userDetails -> {
           ((TwitterQueryUser) userDetails).setAuthorities(authorities);
-          return new UsernamePasswordAuthenticationToken(userDetails, jwt.getTokenValue(),
+          return new UsernamePasswordAuthenticationToken(userDetails, NA,
               authorities);
         })
         .orElseThrow(() -> new BadCredentialsException("User could not be found in the database"));

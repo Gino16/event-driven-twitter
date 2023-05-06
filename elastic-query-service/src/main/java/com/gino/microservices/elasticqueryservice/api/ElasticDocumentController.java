@@ -9,6 +9,7 @@ import javax.validation.constraints.NotEmpty;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@PreAuthorize("isAuthenticated()")
 @RequestMapping(value = "/documents")
 @RequiredArgsConstructor
 @Slf4j
@@ -36,6 +38,7 @@ public class ElasticDocumentController {
     return ResponseEntity.ok(elasticQueryService.getDocumentById(id));
   }
 
+  @PreAuthorize("hasRole('APP_USER_ROLE') || hasAuthority('SCOPE_APP_USER_ROLE')")
   @PostMapping("/get-document-by-text")
   public @ResponseBody ResponseEntity<List<ElasticQueryServiceResponseModel>> getDocumentsByText(
       @RequestBody @Valid ElasticQueryServiceRequestModel requestModel) {
