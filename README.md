@@ -1,6 +1,9 @@
 ## Event driven project with twitter theme
 In this project we are using event driven design in a simulation of consumer of api tweets.
 
+Diagram:
+![Big Picture Diagram](https://raw.githubusercontent.com/Gino16/event-driven-twitter/main/documentation/big_picture.jpg)
+
 We are using:
 * Spring Boot
 * Kafka
