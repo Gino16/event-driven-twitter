@@ -6,6 +6,6 @@ spring:
   cloud:
     config:
       name: elastic-query-service,config-client
-      username: '{cipher}53a3e788492a5be6aa85fb24fa33465276c80fc079c54bf57eaddae762ed186a31dd7a5d77fa2ed5d8c6c60aab5fb969'
-      password: '{cipher}17c19ad709b52df79e33993980b480feab3f1960ba5f4068358200fa1d6e41167db3ceceae4d0107632bd1fcf73c4a45'
+      username: '{cipher}9b79447b10a8fb21d2fce03810e707dc858745669681bffb9c5c56f37f5389fd6980ca04f4ebf275879980792fec711c'
+      password: '{cipher}2cb01338651cb2954032d199a70835385cdbdc728a9f95b7944d18bbd403405b70d8c89fa41eb966dae50eb0009d9081'
 #      uri: http://localhost:8888 Demo_Pwd_Encrypt2023!

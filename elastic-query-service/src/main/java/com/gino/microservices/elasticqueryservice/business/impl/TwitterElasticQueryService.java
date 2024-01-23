@@ -17,8 +17,6 @@ import java.util.List;
 @Slf4j
 public class TwitterElasticQueryService implements ElasticQueryService {
 
-  private final ElasticToResponseModelTransformer elasticToResponseModelTransformer;
-
   private final ElasticQueryServiceResponseModelAssembler elasticQueryServiceResponseModelAssembler;
 
   private final ElasticQueryClient<TwitterIndexModel> elasticQueryClient;

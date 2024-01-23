@@ -5,7 +5,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 import org.springframework.data.elasticsearch.core.query.IndexQueryBuilder;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ElasticIndexUtil<T extends IndexModel> {
 
   public List<IndexQuery> getIndexQueries(List<T> documents) {
